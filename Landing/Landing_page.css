@@ -1,0 +1,196 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background: #2575fc;
+  color: #fff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  margin: 0;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+nav a {
+  color: white;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff9800;
+}
+
+.hero {
+  text-align: center;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: white;
+  padding: 80px 20px;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+}
+
+.hero button {
+  background: #ff9800;
+  color: white;
+  border: none;
+  padding: 14px 30px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.hero button:hover {
+  transform: scale(1.05);
+  background: #e68900;
+}
+
+.about {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #fff;
+  color: #333;
+}
+
+.about h2 {
+  margin-bottom: 15px;
+  color: #2575fc;
+}
+
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px 20px;
+  background: #f1f1f1;
+  flex-wrap: wrap;
+}
+
+.feature {
+  border: 1px solid #ddd;
+  padding: 25px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  background: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+#id1 {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+#id2 {
+  background-color: #fff3e0;
+  color: #e65100;
+}
+
+#id3 {
+  background-color: #e3f2fd;
+  color: #1565c0;
+}
+
+
+.instructor {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #fafafa;
+}
+
+.instructor h2 {
+  color: #2575fc;
+  margin-bottom: 20px;
+}
+
+.instructor-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 20px 0;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+
+.testimonials {
+  background: #2575fc;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.testimonials h2 {
+  margin-bottom: 30px;
+}
+
+.testimonial {
+  max-width: 600px;
+  margin: auto;
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  nav {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+}
